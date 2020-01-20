@@ -3,6 +3,8 @@ import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import gltfPath from '/home/mateus/Documents/index/src/brain.glb'
 import balls from '/home/mateus/Documents/index/src/balls.glb'
+import { MaxEquation } from 'three';
+import '../css/threedviewer.css'
 
 
 
@@ -10,19 +12,23 @@ import balls from '/home/mateus/Documents/index/src/balls.glb'
 class ThreeDViewer extends Component {
     componentDidMount() {
         let me = this
+        this.mouse = { x: 0, y: 0 }
+
         const width = this.mount.clientWidth
         const height = this.mount.clientHeight
-
+        this.screenSize = { x: width, y: height }
         this.scene = new THREE.Scene()
 
-        this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000)
+        this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 10000)
         this.camera.position.z = 5
 
 
 
-        this.renderer = new THREE.WebGLRenderer({ antialias: true })
+        this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
+
         this.renderer.setSize(width, height)
-        this.renderer.setClearColor(0xaaaaaa)
+        this.renderer.setClearColor(0x5F3800, 0.2)
+
         this.mount.appendChild(this.renderer.domElement)
 
         const geometry = new THREE.BoxGeometry(1, 1, 1)
@@ -43,26 +49,28 @@ class ThreeDViewer extends Component {
         this.loader.load(gltfPath, (gltf) => {
             console.log(gltf.scene.children[0])
             this.scene.add(gltf.scene.children[0])
+            this.camera.lookAt(gltf.scene.children[0])
 
         }, console.log('loading'), function (error) {
             console.error(error)
         })
 
         this.loader.load(balls, (gltf) => {
-            gltf.scene.children.forEach((element) => {
+            let x = 0
+            let ballGeometry = new THREE.SphereGeometry(1, 8, 8)
+            for (x = 0; x < 100; x++) {
                 let material2 = new THREE.MeshBasicMaterial({ color: "#000000".replace(/0/g, function () { return (~~(Math.random() * 16)).toString(16); }) })
                 var randomScale = 0
-                if (element.name.includes('ball') == true) {
-                    randomScale = Math.random() * 0.1
-                    mesh = new THREE.Mesh(element.geometry, material2)
-                    mesh.position.x = (Math.random() * (0 + 10)) - 10
-                    mesh.position.y = (Math.random() * (5 + 5)) - 5
-                    mesh.scale.set(randomScale, randomScale, randomScale)
-                    this.scene.add(mesh)
-                    console.log('printed')
-                }
 
-            })
+                randomScale = Math.random() * 0.1
+                mesh = new THREE.Mesh(ballGeometry, material2)
+                mesh.position.x = (Math.random() * (0 + 15)) - 15
+                mesh.position.y = (Math.random() * (5 + 5)) - 5
+                mesh.position.z = (Math.random() * (4 + 4)) - 4
+                mesh.scale.set(randomScale, randomScale, randomScale)
+                this.scene.add(mesh)
+                console.log('printed')
+            }
 
         }, console.log('loading'), function (error) {
             console.error(error)
@@ -71,6 +79,8 @@ class ThreeDViewer extends Component {
 
         this.start()
     }
+
+
 
     componentWillUnmount() {
         this.stop()
@@ -87,10 +97,15 @@ class ThreeDViewer extends Component {
         cancelAnimationFrame(this.frameId)
     }
 
+    _onMouseMove = (e) => {
+        this.mouse.x = (e.nativeEvent.screenX - (this.screenSize.x / 2)) * 0.003
+        this.mouse.y = (e.nativeEvent.screenY - (this.screenSize.y / 2)) * 0.003
+        console.log(e.nativeEvent.screenX)
+    }
+
     animate = () => {
-        //this.camera.position.x += 0.01
-
-
+        this.camera.position.x = this.mouse.x
+        this.camera.position.y = this.mouse.y
         this.renderScene()
         this.frameId = window.requestAnimationFrame(this.animate)
     }
@@ -99,9 +114,12 @@ class ThreeDViewer extends Component {
         this.renderer.render(this.scene, this.camera)
     }
 
+
     render() {
         return (
             < div
+                className='gradientLimbo'
+                onMouseMove={this._onMouseMove}
                 style={{ width: '100%', height: '400px' }}
                 ref={(mount) => { this.mount = mount }}
             />

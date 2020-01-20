@@ -1,0 +1,4 @@
+.gradientLimbo{
+    background: rgb(0,114,179);
+background: radial-gradient(circle, rgba(0,114,179,1) 0%, rgba(0,84,131,1) 100%);
+}

@@ -11,7 +11,7 @@ import logo from './logo.svg';
 function App() {
   return (
     <div>
-      <PageHeader />
+      <PageHeader/>
       <ThreeDViewer/>
     </div>
   );
