@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import gltfPath from '/home/mateus/Documents/index/src/brain.glb'
-import balls from '/home/mateus/Documents/index/src/balls.glb'
+import gltfCurves from '/home/mateus/Documents/index/src/names.glb'
+import gltfBlocks from '/home/mateus/Documents/index/src/block.glb'
 import { MaxEquation } from 'three';
 import '../css/threedviewer.css'
 
@@ -47,34 +48,50 @@ class ThreeDViewer extends Component {
         var mesh
         this.loader = new GLTFLoader()
         this.loader.load(gltfPath, (gltf) => {
-            console.log(gltf.scene.children[0])
             this.scene.add(gltf.scene.children[0])
-            this.camera.lookAt(gltf.scene.children[0])
+
 
         }, console.log('loading'), function (error) {
             console.error(error)
         })
 
-        this.loader.load(balls, (gltf) => {
-            let x = 0
-            let ballGeometry = new THREE.SphereGeometry(1, 8, 8)
-            for (x = 0; x < 100; x++) {
-                let material2 = new THREE.MeshBasicMaterial({ color: "#000000".replace(/0/g, function () { return (~~(Math.random() * 16)).toString(16); }) })
-                var randomScale = 0
-
-                randomScale = Math.random() * 0.1
-                mesh = new THREE.Mesh(ballGeometry, material2)
-                mesh.position.x = (Math.random() * (0 + 15)) - 15
-                mesh.position.y = (Math.random() * (5 + 5)) - 5
-                mesh.position.z = (Math.random() * (4 + 4)) - 4
-                mesh.scale.set(randomScale, randomScale, randomScale)
-                this.scene.add(mesh)
-                console.log('printed')
-            }
-
-        }, console.log('loading'), function (error) {
-            console.error(error)
+        this.loader.load(gltfCurves, (gltf) => {
+            gltf.scene.children.forEach(element => {
+                element.position.set(-2, 2, -3)
+                element.scale.set(1, 1, 1)
+                element.rotation.set(0, 0, 45)
+                this.scene.add(element)
+            });
         })
+
+        this.loader.load(gltfBlocks, (gltf) => {
+            gltf.scene.children.forEach(element => {
+                element.position.set(9, -3, -1)
+                element.scale.set(2, 2, 0.7)
+                element.rotation.set(0, 25, 20)
+                this.scene.add(element)
+            });
+            console.log(gltf)
+        })
+
+        let ballGeometry = new THREE.SphereGeometry(2, 8, 8)
+        for (let x = 0; x < 100; x++) {
+            let material2 = new THREE.MeshBasicMaterial(
+                { color: "#000000".replace(/0/g, function () { return (~~(Math.random() * 16)).toString(16) }) }
+            )
+
+
+            var randomScale = 0
+            randomScale = Math.random() * 0.1
+            mesh = new THREE.Mesh(ballGeometry, material2)
+            mesh.position.x = (Math.random() * (0 + 15)) - 15
+            mesh.position.y = (Math.random() * (5 + 5)) - 5
+            mesh.position.z = (Math.random() * (4 + 4)) - 5
+            mesh.scale.set(randomScale, randomScale, randomScale)
+            this.scene.add(mesh)
+        }
+
+
 
 
         this.start()
@@ -100,7 +117,6 @@ class ThreeDViewer extends Component {
     _onMouseMove = (e) => {
         this.mouse.x = (e.nativeEvent.screenX - (this.screenSize.x / 2)) * 0.003
         this.mouse.y = (e.nativeEvent.screenY - (this.screenSize.y / 2)) * 0.003
-        console.log(e.nativeEvent.screenX)
     }
 
     animate = () => {
