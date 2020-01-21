@@ -11,6 +11,9 @@ import '../css/threedviewer.css'
 
 
 class ThreeDViewer extends Component {
+    eulerToDegree(euler) {
+        return ((euler) / (2 * Math.PI)) * 360
+    }
     componentDidMount() {
         let me = this
         this.mouse = { x: 0, y: 0 }
@@ -28,7 +31,7 @@ class ThreeDViewer extends Component {
         this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
 
         this.renderer.setSize(width, height)
-        this.renderer.setClearColor(0x5F3800, 0.2)
+        this.renderer.setClearColor(0x5F3800, 0)
 
         this.mount.appendChild(this.renderer.domElement)
 
@@ -49,8 +52,7 @@ class ThreeDViewer extends Component {
         this.loader = new GLTFLoader()
         this.loader.load(gltfPath, (gltf) => {
             this.scene.add(gltf.scene.children[0])
-
-
+            console.log(gltf)
         }, console.log('loading'), function (error) {
             console.error(error)
         })
@@ -71,8 +73,8 @@ class ThreeDViewer extends Component {
                 element.rotation.set(0, 25, 20)
                 this.scene.add(element)
             });
-            console.log(gltf)
         })
+
 
         let ballGeometry = new THREE.SphereGeometry(2, 8, 8)
         for (let x = 0; x < 100; x++) {
@@ -90,14 +92,8 @@ class ThreeDViewer extends Component {
             mesh.scale.set(randomScale, randomScale, randomScale)
             this.scene.add(mesh)
         }
-
-
-
-
         this.start()
     }
-
-
 
     componentWillUnmount() {
         this.stop()
@@ -136,7 +132,7 @@ class ThreeDViewer extends Component {
             < div
                 className='gradientLimbo'
                 onMouseMove={this._onMouseMove}
-                style={{ width: '100%', height: '400px' }}
+                style={{ width: '100%', height: '300px' }}
                 ref={(mount) => { this.mount = mount }}
             />
         )

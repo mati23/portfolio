@@ -1,0 +1,10 @@
+@font-face{
+    font-family: BebasNeue;
+    src: url('../fonts/BebasNeue-Regular.ttf');
+}
+.grid-template{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;    
+}
