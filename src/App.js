@@ -9,6 +9,7 @@ import ThreeDViewer from './components/ThreeDViewer';
 import logo from './logo.svg';
 import RightProjects from './components/RightProjects';
 import MyDescription from './components/MyDescription';
+import Footer from './components/Footer';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <LeftProjects />
         <RightProjects />
       </div>
+      <Footer />
     </div>);
 }
 

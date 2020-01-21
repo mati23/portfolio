@@ -2,9 +2,26 @@
     font-family: BebasNeue;
     src: url('../fonts/BebasNeue-Regular.ttf');
 }
+@font-face{
+    font-family: Schoolar;
+    src: url('../fonts/Printcess.ttf');
+}
 .grid-template{
     display: flex;
     flex-direction: row;
     width: 100%;
+    flex-wrap: wrap;    
+}
+
+.side-title{
+    text-align: center;
+    width: 100%;
+    font-size: 3.5rem;
+    padding: 1em;
+    color: #292929;
+}
+.side-row{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;    
 }

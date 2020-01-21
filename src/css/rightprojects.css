@@ -1,6 +1,11 @@
 .right-projects{
-    background-color: #040813;
-    flex: 2;
-    color: white;
+    background-color: #232323;    
+    flex: 1;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: BebasNeue;
+}
+.right-projects .side-title{
+    color: #ddd;
 }
