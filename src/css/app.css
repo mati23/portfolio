@@ -16,12 +16,32 @@
 .side-title{
     text-align: center;
     width: 100%;
-    font-size: 3.5rem;
-    padding: 1em;
     color: #292929;
 }
 .side-row{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;    
+}
+
+.top-bar, .top-bar .menu{
+    background-color: #292929!important;
+    
+    color: white;
+}
+.top-bar-logo{
+    display: flex;
+    flex-direction: row!important;
+}
+.top-bar .mateus{
+    font-family: Schoolar;
+    font-size: 2rem;
+}
+.top-bar .arruda{
+    font-family: BebasNeue;
+    font-size: 2rem;
+}
+.schoolar-font{
+    font-family: Schoolar;
+    font-size: 5em;
 }

@@ -3,18 +3,20 @@ import '../css/rightprojects.css'
 import { render } from '@testing-library/react'
 import React, { Component } from 'react'
 
-function RightProjects() {
-    return (
-        <div className='right-projects'>
-            <div className="side-title">
-                What I did as an Developer
-            </div>
-            <div className="side-row">
+class RightProjects extends Component {
+    render() {
+        return (
+            <div className='right-projects'>
+                <div className="side-title">
+                    {this.props.dataFromParent[localStorage['languages']].sideTitle[1]}
+                </div>
+                <div className="side-row">
 
-                <div className='empty-div'></div>
+                    <div className='empty-div'></div>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default RightProjects

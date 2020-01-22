@@ -1,24 +1,27 @@
-import React from 'react'
 import '../css/mydescription.css'
 
-function MyDescription() {
-    return (
-        <div className='my-description'>
-            My name is just Mateus. I'm just from a small city of Brazil. I'm just trying to do beautiful things.
-            <br />
-            Just applying myself everyday just to learn the unknown.
+import React, { Component } from 'react'
 
-            Just being amazed by this crazy world.
-            <br />
-            Just sad because I just wish to have all the time just to learn.
-
-            Just happy because I have just everyone that I need in my life.
-            <br />
-            Just trying to be...
-            <br />
-            Just someone.
-        </div>
-    )
+class MyDescription extends Component {
+    render() {
+        return (
+            <div className='my-description'>
+                {this.props.dataFromParent[localStorage['languages']].description[0]}
+                <br />
+                {this.props.dataFromParent[localStorage['languages']].description[1]}
+                <br />
+                {this.props.dataFromParent[localStorage['languages']].description[2]}
+                <br />
+                {this.props.dataFromParent[localStorage['languages']].description[3]}
+                <br />
+                {this.props.dataFromParent[localStorage['languages']].description[4]}
+                <br />
+                {this.props.dataFromParent[localStorage['languages']].description[5]}
+                <br />
+                {this.props.dataFromParent[localStorage['languages']].description[6]}
+            </div>
+        )
+    }
 }
 
 export default MyDescription

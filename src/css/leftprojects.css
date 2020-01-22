@@ -36,3 +36,9 @@
     flex-grow: 1;
     width: 50%;
 }
+
+.left-projects .side-title{
+    color: #292929;
+    font-size: 3.0em;
+    padding: 30px 0 0 0;
+}
