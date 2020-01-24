@@ -4,7 +4,16 @@
 }
 @font-face{
     font-family: Schoolar;
-    src: url('../fonts/Printcess.ttf');
+    src: url('../fonts/Diamonds.ttf');
+}
+@font-face{
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face{
+    font-family: RobotoThin;
+    src: url('../fonts/Roboto-Light.ttf');
 }
 .grid-template{
     display: flex;
@@ -35,11 +44,13 @@
 }
 .top-bar .mateus{
     font-family: Schoolar;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: baseline;
 }
 .top-bar .arruda{
     font-family: BebasNeue;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .schoolar-font{
     font-family: Schoolar;

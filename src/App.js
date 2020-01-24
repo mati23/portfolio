@@ -14,8 +14,8 @@ import Footer from './components/Footer';
 
 
 function App() {
-  if (localStorage['language'] === null || localStorage['language'] === undefined) {
-    localStorage['language'] = 0
+  if (localStorage['languages'] == null || localStorage['languages'] == undefined) {
+    localStorage.setItem('languages', 0)
   }
 
   var environmentVariable = [
@@ -31,7 +31,8 @@ function App() {
         "Apenas tentando ser...",
         "Apenas alguém."
       ],
-      sideTitle: ['O que fiz como artista', 'O que fiz como desenvolvedor']
+      sideTitle: ['O que fiz como artista', 'O que fiz como desenvolvedor'],
+      artNames: ['Previsão da História', 'Tempo e Dinheiro', 'Casa Assombrada', 'Capsule 341', 'Spider-Man']
     }, {
       name: 'Mateus',
       nickName: 'Arruda',
@@ -44,7 +45,8 @@ function App() {
         "Just trying to be...",
         "Just Someone"
       ],
-      sideTitle: ['What I did as an artist', 'What I did as a developer']
+      sideTitle: ['What I did as an artist', 'What I did as a developer'],
+      artNames: ['History Prediction', 'Time and Money', 'Haunted House', 'Capsule 341', 'Spider-Man']
 
     },
     {
@@ -59,7 +61,8 @@ function App() {
         "ただしようとしている...",
         "ただ誰か。"
       ],
-      sideTitle: ['アーティストとしてやったこと', '開発者としてやったこと']
+      sideTitle: ['アーティストとしてやったこと', '開発者としてやったこと'],
+      artNames: ['履歴予測', '時間とお金', 'お化け屋敷', 'Capsule 341', 'Spider-Man']
     }]
   return (
     <div>
