@@ -5,7 +5,6 @@ import React, { Component } from 'react'
 
 function createThumbnail(imagePath, description, color1, color2) {
     let path = require('../images/' + imagePath)
-    console.log(path)
     return (
         <div className="project-thumbnail">
             <div className='image-thumbnail'>

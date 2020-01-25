@@ -52,7 +52,7 @@ class ThreeDViewer extends Component {
         this.loader = new GLTFLoader()
         this.loader.load(gltfPath, (gltf) => {
             this.scene.add(gltf.scene.children[0])
-            console.log(gltf)
+
         }, console.log('loading'), function (error) {
             console.error(error)
         })
