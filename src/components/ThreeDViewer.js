@@ -4,7 +4,6 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import gltfPath from '/home/mateus/Documents/index/src/brain.glb'
 import gltfCurves from '/home/mateus/Documents/index/src/names.glb'
 import gltfBlocks from '/home/mateus/Documents/index/src/block.glb'
-import { MaxEquation } from 'three';
 import '../css/threedviewer.css'
 
 
@@ -15,7 +14,6 @@ class ThreeDViewer extends Component {
         return ((euler) / (2 * Math.PI)) * 360
     }
     componentDidMount() {
-        let me = this
         this.mouse = { x: 0, y: 0 }
 
         const width = this.mount.clientWidth
@@ -28,7 +26,7 @@ class ThreeDViewer extends Component {
 
 
 
-        this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true })
+        this.renderer = new THREE.WebGLRenderer({ alpha: true })
 
         this.renderer.setSize(width, height)
         this.renderer.setClearColor(0x5F3800, 0)

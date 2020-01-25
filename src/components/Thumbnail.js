@@ -1,8 +1,7 @@
 import '../css/leftprojects.css'
 
 import React, { Component } from 'react'
-import { render } from '@testing-library/react'
-import { Spring } from 'react-spring/renderprops'
+
 import { useSpring, animated } from 'react-spring'
 
 
