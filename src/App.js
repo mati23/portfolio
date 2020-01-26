@@ -32,7 +32,7 @@ function App() {
         "Apenas alguém."
       ],
       sideTitle: ['O que fiz como artista', 'O que fiz como desenvolvedor'],
-      artNames: ['Previsão da História', 'Tempo e Dinheiro', 'Casa Assombrada', 'Capsule 341', 'Spider-Man']
+      artNames: ['Capsule 341', 'Previsão Histórica', 'Tempo e Dinheiro', 'Bem-vindo à Minha Mente', 'Casa Assombrada', 'Spider-Man']
     }, {
       name: 'Mateus',
       nickName: 'Arruda',
@@ -46,7 +46,7 @@ function App() {
         "Just Someone"
       ],
       sideTitle: ['What I did as an artist', 'What I did as a developer'],
-      artNames: ['History Prediction', 'Time and Money', 'Haunted House', 'Capsule 341', 'Spider-Man']
+      artNames: ['Capsule 341', '履歴予測', '時間とお金', '私の心へようこそ', 'お化け屋敷', 'Spider-Man']
 
     },
     {
@@ -62,7 +62,7 @@ function App() {
         "ただ誰か。"
       ],
       sideTitle: ['アーティストとしてやったこと', '開発者としてやったこと'],
-      artNames: ['履歴予測', '時間とお金', 'お化け屋敷', 'Capsule 341', 'Spider-Man']
+      artNames: ['Capsule 341', 'Previsão Histórica', 'Tempo e Dinheiro', 'Bem-vindo à Minha Mente', 'Casa Assombrada', 'Spider-Man']
     }]
   return (
     <div>

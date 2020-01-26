@@ -8,9 +8,12 @@ import { useSpring, animated } from 'react-spring'
 const Thumbnail = props => {
     const [middleIcon, set_middleIcon] = useSpring(() => ({
         scale: 1,
-        opacity: 1,
         boxShadow: "3px 3px 5px rgba(0, 0, 0, 0.62)",
         config: { mass: 2, tension: 170, friction: 12 }
+    }));
+    const [descriptionOpacity, setDescription] = useSpring(() => ({
+        opacity: 0.9,
+        background: "linear-gradient(45deg, " + props.objectStyle.color1 + " 10%, " + props.objectStyle.color2 + " 100%)"
     }));
 
     console.log(props)
@@ -18,32 +21,41 @@ const Thumbnail = props => {
     return (
         <div className="project-thumbnail">
             <div className='image-thumbnail'>
-                <div className='frame'>
-                    <img src={path} alt="" />
+                <animated.div className='frame' onMouseEnter={() => {
+                    set_middleIcon({
+                        scale: 1.05,
+                        boxShadow: "3px 3px 5px rgba(0, 0, 0, 0.62)",
+                        config: { mass: 1, tension: 170, friction: 12 }
+                    })
+                    setDescription({
+                        opacity: 0
+                    })
+                }
+                }
+                    onMouseLeave={() => {
+                        set_middleIcon({
+                            scale: 1,
+                            boxShadow: "3px 3px 5px rgba(0, 0, 0, 0.62)",
+                            config: { mass: 2, tension: 170, friction: 12 }
+                        });
+                        setDescription({
+                            opacity: 0.9
+                        })
+                    }
+                    }
+                    style={{
+                        transform: middleIcon.scale.interpolate(s => `scale(${s})`),
+                        boxShadow: middleIcon.boxShadow,
+                        opacity: middleIcon.opacity
+                    }}>
+                    <img src={path} alt="" style={{}} />
                     <animated.div
-                        onMouseEnter={() =>
-                            set_middleIcon({
-                                scale: 2,
-                                opacity: 0.5,
-                                boxShadow: "3px 3px 5px rgba(0, 0, 0, 0.62)",
-                                config: { mass: 2, tension: 170, friction: 12 }
-                            })
-
-                        }
-                        onMouseLeave={() =>
-                            set_middleIcon({
-                                scale: 1,
-                                opacity: 1,
-                                boxShadow: "3px 3px 5px rgba(0, 0, 0, 0.62)",
-                                config: { mass: 2, tension: 170, friction: 12 }
-                            })
-                        }
-                        className='frame-description' style={{
-                            transform: middleIcon.scale.interpolate(s => `scale(${s}) rotateZ(.1deg)`),
-                            boxShadow: middleIcon.boxShadow
+                        style={{
+                            opacity: descriptionOpacity.opacity,
+                            background: descriptionOpacity.background,
                         }}
-                    >{props.objectStyle.description}</animated.div>
-                </div>
+                        className='frame-description'>{props.objectStyle.description}</animated.div>
+                </animated.div>
             </div>
         </div >
     )
