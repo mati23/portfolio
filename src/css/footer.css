@@ -1,0 +1,41 @@
+.footer{
+    min-height: 200px;
+    background-image: url('../css/noise.png');
+    display: flex; 
+    padding: 2em 0 0 0;
+    flex-direction: column;   
+}
+.footer-title{
+    margin: 1em;
+    flex-grow: 1;
+    width: 100%;
+    font-size: 2em;
+    color: #ddd;
+    text-align: center;
+}
+.thumbnail-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.circled-tumbnail{    
+    margin: 1em;
+    background:linear-gradient(45deg, rgba(17,150,145) 0%, rgba(17,200,145,1) 100%);
+    border-radius: 50%;  
+    height: 6em;    
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 3px 10px -3px rgba(200,200,200,1);
+    -moz-box-shadow: 0px 3px 10px -3px rgba(200,200,200,1);
+    box-shadow: 0px 3px 10px -3px rgba(200,200,200,1);
+    
+}
+.inner-circle{
+    background-image: url('../css/noise.png');
+    border-radius: 50%;  
+    height: 5.5em;    
+    width: 5.5em;
+}
