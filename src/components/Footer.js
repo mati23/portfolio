@@ -62,7 +62,7 @@ const Footer = props => {
                 <div className="contact">
                     <CircledThumbnail objectStyle={{ imagePath: 'me.png' }} />
                     <div className="social-media-container">
-                        <CircledThumbnail objectStyle={{ imagePath: 'github-image.svg' }} />
+                        <CircledThumbnail objectStyle={{ imagePath: 'github-image.svg', clickable: true }} />
                         <CircledThumbnail objectStyle={{ imagePath: 'telegram.svg' }} />
                         <CircledThumbnail objectStyle={{ imagePath: 'linkedin.png' }} />
                     </div>
