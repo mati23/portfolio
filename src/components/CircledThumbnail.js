@@ -10,8 +10,7 @@ const CircledThumbnail = props => {
 
     return (
         <animated.div className="circled-tumbnail"
-            onMouseEnter={() => { console.log(logoPath) }}
-            style={{}}
+
         >
             <div className="inner-circle">
                 <img src={logoPath} alt="" style={{ width: '100%', height: '100%', borderRadius: '50%' }} />

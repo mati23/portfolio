@@ -33,7 +33,13 @@ function App() {
       ],
       sideTitle: ['O que fiz como artista', 'O que fiz como desenvolvedor'],
       artNames: ['Capsule 341', 'Previsão Histórica', 'Tempo e Dinheiro', 'Bem-vindo à Minha Mente', 'Casa Assombrada', 'Spider-Man'],
-      codeProjectNames: ['Magnifinance', 'Blender', 'Kaynan Nutricionista ', 'Loading JR.']
+      codeProjectNames: ['Magnifinance', 'Blender', 'Kaynan Nutricionista ', 'Loading JR.'],
+      data: {
+        labels: ['Teamwork', 'Organization', 'Adaptability', 'Curiosity', 'Self-taught'],
+        datasets: [{
+          data: [95, 80, 85, 88, 75]
+        }]
+      }
     }, {
       name: 'Mateus',
       nickName: 'Arruda',
@@ -48,7 +54,13 @@ function App() {
       ],
       sideTitle: ['What I did as an artist', 'What I did as a developer'],
       artNames: ['Capsule 341', 'History Prediction', 'Time and Money', 'Welcome to my mind', 'Haunted House', 'Spider-Man'],
-      codeProjectNames: ['Magnifinance', 'Blender', 'Kaynan Nutritionist', 'Loading JR.']
+      codeProjectNames: ['Magnifinance', 'Blender', 'Kaynan Nutritionist', 'Loading JR.'],
+      data: {
+        labels: ['Teamwork', 'Organization', 'Adaptability', 'Curiosity', 'Self-taught'],
+        datasets: [{
+          data: [95, 80, 85, 88, 75]
+        }]
+      }
     },
     {
       name: 'マテウス',
@@ -64,7 +76,21 @@ function App() {
       ],
       sideTitle: ['アーティストとしてやったこと', '開発者としてやったこと'],
       artNames: ['Capsule 341', '履歴予測', '時間とお金', '私の心へようこそ', 'お化け屋敷', 'Spider-Man'],
-      codeProjectNames: ['Magnifinance', 'Blender', 'カイナン 栄養士', 'Loading JR.']
+      codeProjectNames: ['Magnifinance', 'Blender', 'カイナン 栄養士', 'Loading JR.'],
+      data: {
+        labels: ['Teamwork', 'Organization', 'Adaptability', 'Curiosity', 'Self-taught'],
+        datasets: [{
+          data: [92, 80, 95, 88, 75],
+          backgroundColor: [
+            'rgba(255,255,255,0.1)'
+          ],
+
+          borderColor: [
+            'rgba(17, 192, 145,1)'
+          ],
+
+        }]
+      }
     }]
   return (
     <div>
@@ -75,7 +101,7 @@ function App() {
         <LeftProjects dataFromParent={environmentVariable} />
         <RightProjects dataFromParent={environmentVariable} />
       </div>
-      <Footer />
+      <Footer dataFromParent={environmentVariable} />
     </div>);
 }
 

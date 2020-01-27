@@ -16,7 +16,6 @@ const Thumbnail = props => {
         background: "linear-gradient(45deg, " + props.objectStyle.color1 + " 10%, " + props.objectStyle.color2 + " 100%)"
     }));
 
-    console.log(props)
     let path = require('../images/' + props.objectStyle.imagePath)
     return (
         <div className="project-thumbnail">
