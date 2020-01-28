@@ -9,7 +9,13 @@ const Details = props => {
 
             </div>
             <div className="description-container">
-                {props.location.state.name}
+                <div className="title">
+                    {props.location.state.name}
+                </div>
+                <div className="description">
+                    dasdkasdlçsakdaslçdk
+                </div>
+
             </div>
 
         </div>

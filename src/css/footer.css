@@ -56,5 +56,9 @@
 .customeTheme{
     background: linear-gradient(45deg, rgba(0,42,66,1) 0%, rgba(29,139,109,1) 100%);
     color: white;
-    font-size: 2em;
+    font-size: 2em;    
+}
+.__react_component_tooltip.type-dark.place-top:after{
+    border-top-color: rgba(9, 74, 80,1)!important;
+
 }
