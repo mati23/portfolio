@@ -20,12 +20,14 @@ const CircledThumbnail = props => {
     } else {
         return (
 
-            <animated.div className="circled-tumbnail" onClick={() => { console.log('c   licou') }}>
+            <div className="circled-tumbnail" onClick={() => { console.log('c   licou') }}>
                 <div className="inner-circle" data-tip={props.objectStyle.tooltipText}>
                     <img src={logoPath} alt="" style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
-                    <ReactTooltip className='customeTheme' delayHide={500} effect='solid' html={true} />               </div>
 
-            </animated.div>
+                    <ReactTooltip className='customeTheme' delayHide={500} effect='solid' html={true} />
+
+                </div>
+            </div>
         )
     }
 }

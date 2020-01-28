@@ -83,14 +83,9 @@ function App() {
         labels: ['Teamwork', 'Organization', 'Adaptability', 'Curiosity', 'Self-taught'],
         datasets: [{
           data: [92, 80, 95, 88, 75],
-          backgroundColor: [
-            'rgba(255,255,255,0.1)'
-          ],
-
-          borderColor: [
-            'rgba(17, 192, 145,1)'
-          ],
-
+          backgroundColor: 'rgba(17, 192, 145, 0.2)',
+          borderColor: 'rgba(255,255,255,1)',
+          borderWidth: 3
         }]
       }
     }]

@@ -7,12 +7,14 @@ import Thumbnail from './Thumbnail'
 const RightProjects = props => {
     let thumbnails = [
         {
-            name: 'capsule341',
-            description: 'blabla'
+            name: 'Capsule 341',
+            description: 'blabla',
+            folderName: 'capsule341'
         },
         {
-            name: 'hand',
-            description: 'blabla2'
+            name: 'History Prediction',
+            description: 'blabla2',
+            folderName: 'hand'
         }
     ]
     return (

@@ -11,12 +11,22 @@ import Thumbnail from './Thumbnail'
 const LeftProjects = props => {
     let thumbnails = [
         {
-            name: 'capsule341',
-            description: 'blabla'
+            name: 'Capsule 341',
+            description: '<p>I was always passionate about Akira Toriyama art involving vehicles. Since I always watched Dragon Ball Z and read the mangas I constantly saw those capsule vehicles and \
+            always thought it was so simple and so well elaborated for the style of the whole anime.\
+            With that in mind I tried to replicate the art of Capsule 341 in a 3D form. I learned a lot,\
+            discovered new techniques in modeling and texturing and it is also my first animation. That you can see it \
+            <a href="https://www.youtube.com/watch?v=-dyYc4c2vQ8">here</a>.</p> <br/>\
+            I made this project in Blender 2.81 and created the textures using photoshop for the green and old \
+            looking metal and also the name of the vehicle\'s model. I also used eolic turbine sounds in the animation\
+            to simulate the running motor of the plane.\
+            ',
+            folderName: 'capsule341',
         },
         {
-            name: 'hand',
-            description: 'blabla2'
+            name: 'History Prediction',
+            description: 'blabla2',
+            folderName: 'capsule341',
         }
     ]
     return (

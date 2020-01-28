@@ -52,7 +52,8 @@ const Footer = props => {
                                 fontStyle: "bold",
                                 suggestedMin: 20,
                                 suggestedMax: 100,
-                                backdropColor: "rgba(0,0,0,0)"
+                                fontColor: '#fff',
+                                backdropColor: '#444'
                             },
                         },
                     }}
