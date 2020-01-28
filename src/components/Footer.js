@@ -20,7 +20,7 @@ const Footer = props => {
                 <CircledThumbnail objectStyle={{ imagePath: 'react.png' }} />
             </div>
             <div className="footer-title">And the tools I'm always using </div>
-            <div className="thumbnail-container" onMouseEnter={() => console.log(props)}>
+            <div className="thumbnail-container">
                 <CircledThumbnail objectStyle={{ imagePath: 'ubuntu.png' }} />
                 <CircledThumbnail objectStyle={{ imagePath: 'blender.png' }} />
                 <CircledThumbnail objectStyle={{ imagePath: 'vs.png' }} />

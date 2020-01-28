@@ -10,6 +10,8 @@ import logo from './logo.svg';
 import RightProjects from './components/RightProjects';
 import MyDescription from './components/MyDescription';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom"
+import Details from './components/Details';
 
 
 
@@ -93,16 +95,21 @@ function App() {
       }
     }]
   return (
-    <div>
+    <Router>
       <PageHeader dataFromParent={environmentVariable} />
       <ThreeDViewer />
-      <div className='grid-template'>
-        <MyDescription dataFromParent={environmentVariable} />
-        <LeftProjects dataFromParent={environmentVariable} />
-        <RightProjects dataFromParent={environmentVariable} />
-      </div>
+      <Switch>
+        <Route path="/" exact>
+          <div className='grid-template'>
+            <MyDescription dataFromParent={environmentVariable} />
+            <LeftProjects dataFromParent={environmentVariable} />
+            <RightProjects dataFromParent={environmentVariable} />
+          </div>
+        </Route>
+        <Route path="/subject/:id" component={Details}></Route>
+      </Switch>
       <Footer dataFromParent={environmentVariable} />
-    </div>);
+    </Router >);
 }
 
 export default App;
