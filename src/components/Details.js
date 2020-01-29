@@ -1,28 +1,32 @@
 import React, { Component } from 'react'
 import '../css/details.css'
+import image from '../images/description/capsule341/1.jpg'
 
 const Details = props => {
-    let path = props.location.state.folderName
-    console.log(path)
-    const images = {
-        first: require('../images/description/capsule341/1.jpg'),
-        second: require('../images/description/capsule341/2.jpg'),
-        third: require('../images/description/capsule341/3.jpg')
+    let path = {
+        first: '/description/' + props.location.state.folderName + '/1.jpg',
+        second: '/description/' + props.location.state.folderName + '/2.jpg',
+        third: '/description/' + props.location.state.folderName + '/3.jpg'
     }
+
+
+
     return (
         <div className="details">
             <div className="image-container">
                 <div className="detail-image">
-                    <img src={images.second} alt="" />
+                    <img src={`${path.first}`} alt="" />
                 </div>
                 <div className="image-container-row">
-                    <div className="detail-image">
-                        <img src={images.first} alt="" className="small" />
+                    <div className="small">
+                        <img src={`${path.second}`} alt="" />
                     </div>
-                    <div className="detail-image">
-                        <img src={images.third} alt="" className="small" />
+                    <div className="small">
+                        <img src={`${path.third}`} alt="" />
                     </div>
                 </div>
+
+
 
             </div>
             <div className="description-container">
