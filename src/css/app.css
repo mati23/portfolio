@@ -38,10 +38,7 @@
     
     color: white;
 }
-.top-bar-logo{
-    display: flex;
-    flex-direction: row!important;
-}
+
 .top-bar .mateus{
     font-family: Schoolar;
     font-size: 1.5rem;

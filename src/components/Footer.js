@@ -80,6 +80,7 @@ const Footer = props => {
                         <CircledThumbnail objectStyle={{ imagePath: 'github-image.svg', clickable: true, tooltipText: '/mati23' }} />
                         <CircledThumbnail objectStyle={{ imagePath: 'telegram.svg', clickable: true, tooltipText: '+55 88 99606-1495' }} />
                         <CircledThumbnail objectStyle={{ imagePath: 'linkedin.png', clickable: true, tooltipText: '/mateusarruda23' }} />
+                        <CircledThumbnail objectStyle={{ imagePath: 'artstation.jpg', clickable: true, tooltipText: '/arruda23' }} />
                     </div>
                 </div>
 

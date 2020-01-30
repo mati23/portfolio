@@ -1,0 +1,5 @@
+.top-bar-logo a{
+    display: flex;
+    flex-direction: row!important;
+    color: white;
+}

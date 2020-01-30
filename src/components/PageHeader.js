@@ -1,12 +1,14 @@
 import '../css/foundation.css'
-
+import '../css/pageheader.css'
 import React, { Component } from 'react'
+import { Link, Redirect } from 'react-router-dom';
+
 
 
 class PageHeader extends Component {
   changeLanguage = (languageIndex) => () => {
     localStorage['languages'] = languageIndex
-    window.location.reload()
+    window.location.href = '/'
   };
   render() {
     return (
@@ -14,8 +16,10 @@ class PageHeader extends Component {
         <div className='top-bar-left'>
           <ul className='menu'>
             <li className='top-bar-logo'>
-              <div className='mateus'>{this.props.dataFromParent[localStorage['languages']].name}&nbsp;</div>
-              <div className='arruda'>{this.props.dataFromParent[localStorage['languages']].nickName}</div>
+              <Link to="/">
+                <div className='mateus'>{this.props.dataFromParent[localStorage['languages']].name}&nbsp;</div>
+                <div className='arruda'>{this.props.dataFromParent[localStorage['languages']].nickName}</div>
+              </Link>
             </li>
           </ul>
         </div>
