@@ -1,0 +1,68 @@
+[
+    [
+        {
+            "name": "Magnifinance",
+            "description": "<p> Depois de três meses trabalhando para uma empresa em Fortaleza, Brasil, tentei um teste para um desenvolvedor Full-Stack na Magnifinance em Lisboa, Portugal. Passei, deixei meu antigo emprego e comecei a trabalhar remotamente para o segundo. O trabalho exigia que eu morasse lá e trabalhasse no local, mas infelizmente o consulado nunca devolveu meu passaporte. Perdi meu documento e a oportunidade de trabalhar fora do meu país se foi por enquanto. </p> <p> No entanto, em meus seis meses de experiência lá, aprendi muito. Desenvolvi em C #, o Javascript com Angular, trabalhei em equipe, utilizei ferramentas de ponta para o desenvolvimento de software, pude fazer parte de algo que muitas pessoas usariam. Apesar da falta de conhecimento no início, foi uma boa experiência e sou grato por isso. </p>",
+            "folderName": "magnifinance"
+        },
+        {
+            "name": "Animated Preview",
+            "description": "<p> Depois de passar muito tempo modelando e me imergindo no Blender 2.8, eu queria criar algo que envolvesse programação. Então comecei a aprender como criar árvores geradas aleatoriamente. Depois de um tempo, encontrei um recurso interessante no photoshop que fez o novo usuário ver o comportamento de cada pincel em um gif animado. Isso foi realmente útil para mim, então decidi fazer algo semelhante no Blender, pois muitos usuários novos não sabem o que cada ferramenta faz. </p> <p> Então, codificando em Python usando a biblioteca PySide2 junto com o Blender e depois de muitas canecas de café, tutoriais do YouTube, perguntas sobre Stackoverflow e fóruns do Blender, consegui criar uma ferramenta simples que mostra uma visualização de cada pincel de escultura para o usuário, concentrando-se no processo de aprendizado do novo usuário. </p> <p> Você pode conferir este projeto clicando em <a href=\"https://github.com/mati23/AnimatedPreview\"> aqui </ a> </p>.",
+            "folderName": "blender"
+        },
+        {
+            "name": "Kaynan Albuquerque Nutritionist",
+            "description": "<p> Este é um projeto que eu fiz para meu velho amigo do colégio Kaynan Albuquerque. Ele agora é um nutricionista de sucesso e pediu que eu desenvolvesse uma ficha antropométrica que ele preencheria com os dados e os entregaria a seus pacientes. </p> <p> Os principais objetivos deste projeto são que ele tenha que ser bem projetado para atrair a atenção do paciente e ser compreensível. É por isso que usei ChartJs junto com o Materialize para criar uma UI / UX bonita e ainda compreensível para seus pacientes. </p>",
+            "folderName": "kaynan"
+        },
+        {
+            "name": "Loading Junior",
+            "description": "Aqui tive minha primeira experiência profissional. De volta à faculdade, até hoje é uma empresa júnior chamada Loading Jr. fundada por estudantes de Engenharia de Computação. </p> <p> Lá eu tive uma breve experiência com Java, Desenvolvimento Web e Design Gráfico. Também implementei um sistema de check-in usando Java, C e Arduino, onde os alunos confirmam sua presença no escritório da empresa, localizado em uma das salas do edifício. </p>",
+            "folderName": "loadingjr"
+        }
+    ],
+    [
+        {
+            "name": "Magnifinance",
+            "description": "<p>After three months working for a company in Fortaleza, Brazil, I tried a test for a Full-Stack developer at Magnifinance in Lisbon, Portugal. I passed, left my old job and started working for the second one remotely. The job required me to live there and work on site but unfortunatly the consulate never returned my passaport. I lost my document and the oportunity to work outside my country was gone for the moment. </p> <p>However, in my six months experience period there I learned a lot. Developed in C#, Javascript with Angular, worked as a team, manage high end tools for software development, be part of something that a lot of people would use. Despite the lack of knowledge at the beginning it was a good experience and I'm greatful for it.</p>",
+            "folderName": "magnifinance"
+        },
+        {
+            "name": "Animated Preview",
+            "description": "<p>After spending a lot of time modeling and got myself really immersed in Blender 2.8 I wanted to create something involving programming. So I started to learn how to create random generated trees. After a while I faced a intresting feature in photoshop that made new user see the behaviour of each brush in a animated gif. That was really helpful to me so I decided to do something similar in blender, since a lot of new users don't know what each tool does. </p><p>So, coding in Python using PySide2 library along with Blender and after a lot of coffee mugs, YouTube tutorials ,Stackoverflow questions and Blender forums I managed to create a simple tool that will show a preview of each sculpting brush to the user, focusing on new user learning process.</p><p> You can check it out this project by clicking <a href=\"https://github.com/mati23/AnimatedPreview\">here</a></p>.",
+            "folderName": "blender"
+        },
+        {
+            "name": "Kaynan Albuquerque Nutritionist",
+            "description": "<p>This is a project I made for my old friend from high school Kaynan Albuquerque. He is now a successful nutritionist and asked my to develop a antropometric card that he would fill with data and give it to his patients. </p><p> The main goals of this project is that it had to be well designed for the  appealing of patient and very understandable. Thats why I used ChartJs along with Materialize to create a beautiful and  yet comprehensible UI/UX for his patients.</p>",
+            "folderName": "kaynan"
+        },
+        {
+            "name": "Loading Junior",
+            "description": "<p>Here I had my first professional experience. Back in college the is until this day a junior company called Loading Jr. founded by Computer Engineer students.</p> <p>There I had some experience with Java, Web Development and Graphic Design.I also implemented a check-in system using Java, C and Arduino, for the students confirm their presence in the company office that was located in one of the rooms of the building.</p>",
+            "folderName": "loadingjr"
+        }
+    ],
+    [
+        {
+            "name": "Magnifinance",
+            "description": "<p>ブラジルのフォルタレザにある会社で3か月働いた後、ポルトガルのリスボンにあるMagnifinanceでフルスタック開発者のテストを試しました。私は合格し、古い仕事を辞め、2番目の仕事をリモートで始めました。仕事のために私はそこに住み、現地で働く必要がありましたが、残念ながら領事館は私のパスポートを返却しませんでした。私は書類を失い、国外で働く機会は今のところなくなっています。 </ p> <p>ただし、6か月間の経験期間に多くのことを学びました。 C＃で開発されたJavascriptとAngularは、チームとして働き、ソフトウェア開発用のハイエンドツールを管理し、多くの人が使用するものの一部になります。最初は知識不足でしたが、それは良い経験でしたし、私はそれをとてもうれしく思います。</ p>",
+            "folderName": "magnifinance"
+        },
+        {
+            "name": "Animated Preview",
+            "description": "<p>モデリングに多くの時間を費やし、Blender 2.8に夢中になった後、プログラミングを伴うものを作成したいと考えました。そこで、ランダムに生成されたツリーを作成する方法を学び始めました。しばらくして、Photoshopの興味深い機能に直面しました。これにより、新しいユーザーはアニメーションGIFで各ブラシの動作を見ることができました。多くの新しいユーザーは各ツールが何をするのか分からないので、それは私にとって本当に役に立ちましたので、Blender2.8でも同様のことをすることにしました。 </ p> <p>つまり、PySide2ライブラリとBlenderを使用してPythonでコーディングし、たくさんのコーヒーマグカップ、YouTubeチュートリアル、Stackoverflowの質問、Blenderフォーラムを終えて、各彫刻ブラシのプレビューを表示するシンプルなツールを作成しましたユーザーに、新しいユーザーの学習プロセスに焦点を当てます。</ p> <p> <a href=\"https://github.com/mati23/AnimatedPreview\">こちらをクリックすると、このプロジェクトを確認できます</ a>。 </ p>",
+            "folderName": "blender"
+        },
+        {
+            "name": "Kaynan Albuquerque Nutricionista",
+            "description": "<p>これは高校のケイナンアルバカーキ出身の旧友のために作ったプロジェクトです。彼は現在、栄養士として成功しており、データを入力して患者に提供するための屈折率測定カードの開発を依頼されました。 </ p> <p>このプロジェクトの主な目標は、患者の魅力を十分に理解できるように設計する必要があることです。そのため、ChartJをMaterializeと一緒に使用して、彼の患者のために美しくかつわかりやすいUI / UXを作成しました。</ p>",
+            "folderName": "kaynan"
+        },
+        {
+            "name": "Loading Junior",
+            "description": "<p>ここで、私は私の最初の専門的な経験をしました。大学に戻ったのは、今日まで、コンピューターエンジニアの学生によって設立されたLoading Jr.というジュニア企業です。</ p> <p>そこで、Java、Web開発、グラフィックデザインの経験があり、チェックインシステムも実装しました。 Java、C、およびArduinoを使用して、学生が建物の部屋の1つにある会社のオフィスにいることを確認します。</ p>",
+            "folderName": "loadingjr"
+        }
+    ]
+]

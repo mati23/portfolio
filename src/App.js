@@ -25,13 +25,10 @@ function App() {
       name: 'Mateus',
       nickName: 'Arruda',
       description: [
-        "Meu nome é apenas Mateus. Sou apenas de uma pequena cidade do Brasil e estou tentando todos os dias fazer coisas bonitas.",
-        "Apenas me aplicando todos os dias para aprender o desconhecido.",
-        "Apenas triste, porque desejo ter todo o tempo para aprender. Feliz porque tenho todo mundo que preciso na minha vida.",
-        "Apenas tentando superar todas as barreiras que surgiram no meu caminho.",
+        "Meu nome é apenas Mateus. Sou de uma pequena cidade chamada Itapipoca, no Ceará, Brasil.",
+        "Engenheiro de Computação desde 2018 pela Universidade Federal do Ceará.",
         "Apenas fazendo o máximo possível para driblar as consequências de uma má sorte ocasional.",
-        "Apenas tentando ser...",
-        "Apenas alguém."
+        "Apenas tentando ser alguém.",
       ],
       sideTitle: ['O que fiz como artista', 'O que fiz como desenvolvedor'],
       artNames: ['Capsule 341', 'Previsão Histórica', 'Tempo e Dinheiro', 'Bem-vindo à Minha Mente', 'Casa Assombrada', 'Spider-Man'],
@@ -49,13 +46,11 @@ function App() {
       name: 'Mateus',
       nickName: 'Arruda',
       description: [
-        "My name is just Mateus. I'm just from a small city of Brazil and I'm trying everyday to do beautiful things.",
-        "Just applying myself everyday to learn the unknown.",
-        "Just sad because I wish to have all the time to learn. Just happy because I have everyone that I need in my life.",
-        "Just trying to overcome all the barriers that raised in my path.",
-        "Just making everything possible to dribble the consequences of a occasional bad luck",
-        "Just trying to be...",
-        "Just Someone"
+        "My name is just Mateus. I am a small town called Itapipoca, in Ceará, Brazil.",
+        "Computer Engineer since 2018 by the Federal University of Ceará.",
+        "Just doing as much as possible to circumvent the consequences of occasional bad luck.",
+        "Just trying to be someone"
+
       ],
       sideTitle: ['What I did as an artist', 'What I did as a developer'],
       artNames: ['Capsule 341', 'History Prediction', 'Time and Money', 'Welcome to my mind', 'Haunted House', 'Spider-Man'],
@@ -74,13 +69,10 @@ function App() {
       name: 'マテウス',
       nickName: 'アルダ',
       description: [
-        "私の名前はマテウスです。. 私はブラジルの小さな町から来たばかりで、毎日美しいことをしようとしています。",
-        "未知のものを学ぶために毎日自分自身を適用する。",
-        "ただ、悲しいことです。私はいつも学びたいと思っています。人生で必要な人がみんないるから幸せだ。",
-        "私の道で生じたすべての障壁を克服しようとしています。",
-        "偶然の不運の結果をドリブルするためにすべてを可能にするだけ。",
-        "ただしようとしている...",
-        "ただ誰か。"
+        "私の名前はマシューです。私はブラジルのセアラにあるイタピポカという小さな町です。",
+        "2018年からセアラ連邦大学のコンピューターエンジニア。",
+        "偶然の不運の結果を回避するために、できるだけ多くのことをするだけです。",
+        "誰かになろうとするだけ。",
       ],
       sideTitle: ['アーティストとしてやったこと', '開発者としてやったこと'],
       artNames: ['Capsule 341', '履歴予測', '時間とお金', '私の心へようこそ', 'お化け屋敷', 'Spider-Man'],

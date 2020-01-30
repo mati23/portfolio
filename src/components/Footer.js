@@ -5,10 +5,24 @@ import CircledThumbnail from './CircledThumbnail'
 import { Radar, Bar } from 'react-chartjs-2'
 
 const Footer = props => {
+    const technologiesTitle = [
+        {
+            first_title: "Tecnologias que amei usar até agora",
+            second_title: "Ferramentas que uso até hoje"
+        },
+        {
+            first_title: "Technologies I loved to use so far",
+            second_title: "And the tools I'm always using"
+        },
+        {
+            first_title: "今まで使っていたテクノロジー",
+            second_title: "そして私がいつも使っているツール"
+        }
+    ]
 
     return (
         <div className='footer'>
-            <div className="footer-title">Technologies I loved to use so far</div>
+            <div className="footer-title">{technologiesTitle[localStorage['languages']].first_title}</div>
             <div className="thumbnail-container">
 
                 <CircledThumbnail objectStyle={{ imagePath: 'javascript.png' }} />
@@ -19,7 +33,7 @@ const Footer = props => {
                 <CircledThumbnail objectStyle={{ imagePath: 'angular.png' }} />
                 <CircledThumbnail objectStyle={{ imagePath: 'react.png' }} />
             </div>
-            <div className="footer-title">And the tools I'm always using </div>
+            <div className="footer-title">{technologiesTitle[localStorage['languages']].second_title} </div>
             <div className="thumbnail-container">
                 <CircledThumbnail objectStyle={{ imagePath: 'ubuntu.png' }} />
                 <CircledThumbnail objectStyle={{ imagePath: 'blender.png' }} />
