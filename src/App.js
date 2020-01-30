@@ -37,9 +37,12 @@ function App() {
       artNames: ['Capsule 341', 'Previsão Histórica', 'Tempo e Dinheiro', 'Bem-vindo à Minha Mente', 'Casa Assombrada', 'Spider-Man'],
       codeProjectNames: ['Magnifinance', 'Blender', 'Kaynan Nutricionista ', 'Loading JR.'],
       data: {
-        labels: ['Teamwork', 'Organization', 'Adaptability', 'Curiosity', 'Self-taught'],
+        labels: ['Trabalho em Equipe', 'Organização', 'Adaptabilidade', 'Curiosidade', 'Auto-didata'],
         datasets: [{
-          data: [95, 80, 85, 88, 75]
+          data: [92, 80, 95, 88, 75],
+          backgroundColor: 'rgba(17, 192, 145, 0.1)',
+          borderColor: 'rgba(17, 192, 145, 1)',
+          borderWidth: 3
         }]
       }
     }, {
@@ -60,7 +63,10 @@ function App() {
       data: {
         labels: ['Teamwork', 'Organization', 'Adaptability', 'Curiosity', 'Self-taught'],
         datasets: [{
-          data: [95, 80, 85, 88, 75]
+          data: [92, 80, 95, 88, 75],
+          backgroundColor: 'rgba(17, 192, 145, 0.1)',
+          borderColor: 'rgba(17, 192, 145, 1)',
+          borderWidth: 3
         }]
       }
     },
@@ -80,11 +86,11 @@ function App() {
       artNames: ['Capsule 341', '履歴予測', '時間とお金', '私の心へようこそ', 'お化け屋敷', 'Spider-Man'],
       codeProjectNames: ['Magnifinance', 'Blender', 'カイナン 栄養士', 'Loading JR.'],
       data: {
-        labels: ['Teamwork', 'Organization', 'Adaptability', 'Curiosity', 'Self-taught'],
+        labels: ['チームワーク', '組織的', '融通', '好奇心', '自己流'],
         datasets: [{
           data: [92, 80, 95, 88, 75],
-          backgroundColor: 'rgba(17, 192, 145, 0.2)',
-          borderColor: 'rgba(255,255,255,1)',
+          backgroundColor: 'rgba(17, 192, 145, 0.1)',
+          borderColor: 'rgba(17, 192, 145, 1)',
           borderWidth: 3
         }]
       }

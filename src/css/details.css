@@ -3,7 +3,7 @@
     min-height: 30em;
     background-image: url('../images/noise_darkest.png');
     display: grid;
-    color: white;   
+    color: #ccc;   
     grid-template-columns: 3fr 4fr;
     grid-gap: 0 2em;
 }
@@ -31,7 +31,7 @@
     flex-grow: 2;
 }
 .description-container .title{
-    font-size: 5em;    
+    font-size: 3vw;    
 }
 .description-container .description{
     font-size: 1em;    
