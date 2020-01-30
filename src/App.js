@@ -10,7 +10,7 @@ import logo from './logo.svg';
 import RightProjects from './components/RightProjects';
 import MyDescription from './components/MyDescription';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom"
+import { HashRouter, BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom"
 import Details from './components/Details';
 
 
@@ -88,7 +88,7 @@ function App() {
       }
     }]
   return (
-    <Router>
+    <HashRouter basename='/'>
       <PageHeader dataFromParent={environmentVariable} />
       <ThreeDViewer />
       <Switch>
@@ -102,7 +102,7 @@ function App() {
         <Route path="/subject/:id" component={Details}></Route>
       </Switch>
       <Footer dataFromParent={environmentVariable} />
-    </Router >);
+    </HashRouter >);
 }
 
 export default App;

@@ -9,7 +9,7 @@ class MyDescription extends Component {
                 {
                     window.localStorage['languages'] == 2 ? <div>
                         I'm still learning japanese, so a lot of the text was translated by Google 「間違えてすみません」.<br />
-                    </div> : console.log('NAO foi')
+                    </div> : false
                 }
                 {this.props.dataFromParent[localStorage['languages']].description[0]}
                 <br />
